@@ -8,7 +8,7 @@
 </head>
 <body>
     <p>Votre mail :</p>
-    <form action="mdpoubli.php" >
+    <form action="mdpoubli.php">
         <input type="email">
         <input type="submit">
     </form>
