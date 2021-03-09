@@ -42,7 +42,7 @@
                                 </div>
                                 <div class="col-11">
                                     <div class="form-outline">
-                                        <input type="email" id="form2Example1" class="form-control" />
+                                        <input type="text" id="form2Example1" class="form-control" name="nomprenom" />
                                         <label class="form-label" for="form2Example1">Nom & Prénom</label>
                                     </div>
                                 </div>
@@ -58,7 +58,7 @@
                                 </div>
                                 <div class="col-11">
                                     <div class="form-outline mb-4">
-                                        <input type="email" id="form2Example1" class="form-control" />
+                                        <input type="email" id="form2Example1" class="form-control" name="mail" />
                                         <label class="form-label" for="form2Example1">Adresse E-mail</label>
                                     </div>
                                 </div>
@@ -75,7 +75,7 @@
                                 </div>
                                 <div class="col-11">
                                     <div class="form-outline mb-3">
-                                        <input type="password" id="form2Example2" class="form-control" />
+                                        <input type="password" id="form2Example2" class="form-control" name="mdp" />
                                         <label class="form-label" for="form2Example2">Mot de passe</label>
                                     </div>
                                 </div>
@@ -90,9 +90,8 @@
                                 </div>
 
                                 <div class="col">
-                                    <a href="login.html">
-                                    <button type="submit" class="btn btn-success btn-block mb-3 btn-rounded">Se
-                                        connecter</button>
+                                    <a href="login.php">
+                                    <button type="submit" class="btn btn-success btn-block mb-3 btn-rounded">S'inscrire</button>
                                     </a>
                                 </div>
                                 
@@ -100,7 +99,7 @@
 
                             <div class="row">
                                 <div class="mb-4">
-                                    <span class="message">Déjà membre ? </span><a id="creerUnCompteVert" href="login.html">Se connecter</a>
+                                    <span class="message">Déjà membre ? </span><a id="creerUnCompteVert" href="login.php">Se connecter</a>
                                 </div>
                             </div>
                         </div>

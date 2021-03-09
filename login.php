@@ -82,7 +82,7 @@
                             <!-- Register buttons -->
                             <div class="row">
                                 <div class="mb-4">
-                                    <span class="message">Pas encore membre ? <a id="creerUnCompteVert" href="register.html">Créer un compte</a></span>
+                                    <span class="message">Pas encore membre ? <a id="creerUnCompteVert" href="register.php">Créer un compte</a></span>
                                 </div>
                             </div>
 
