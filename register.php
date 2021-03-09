@@ -92,6 +92,8 @@
                                 <div class="col">
                                     <a href="login.php">
                                     <button type="submit" class="btn btn-success btn-block mb-3 btn-rounded">S'inscrire</button>
+                                    <button type="submit" class="btn btn-success btn-block mb-3 btn-rounded">Se
+                                        connecter</button>
                                     </a>
                                 </div>
                                 
