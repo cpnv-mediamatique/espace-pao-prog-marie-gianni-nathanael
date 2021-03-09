@@ -100,7 +100,7 @@
                   <p class="card-text">
                     Des cartes de visite sur mesure, avec des designs et une impression de qualité.
                   </p>
-                  <a href="cartesVisite.html" class="btn btn-success">Commander</a>
+                  <a href="cartesVisite.php" class="btn btn-success">Commander</a>
               </div>
             </div>
           </div>
@@ -129,7 +129,7 @@
                     Étiquettes collantes pouvant servir pour les armoires de classe, les casiers téléphones ou d’autres
                     usages.
                   </p>
-                  <a href="etiquettes.html" class="btn btn-success">Commander</a>
+                  <a href="etiquettes.php" class="btn btn-success">Commander</a>
               </div>
             </div>
           </div>

@@ -90,7 +90,7 @@
                                 </div>
 
                                 <div class="col">
-                                    <a href="login.html">
+                                    <a href="login.php">
                                     <button type="submit" class="btn btn-success btn-block mb-3 btn-rounded">Se
                                         connecter</button>
                                     </a>
@@ -100,7 +100,7 @@
 
                             <div class="row">
                                 <div class="mb-4">
-                                    <span class="message">Déjà membre ? </span><a id="creerUnCompteVert" href="login.html">Se connecter</a>
+                                    <span class="message">Déjà membre ? </span><a id="creerUnCompteVert" href="login.php">Se connecter</a>
                                 </div>
                             </div>
                         </div>
