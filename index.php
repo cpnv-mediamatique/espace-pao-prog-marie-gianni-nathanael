@@ -28,7 +28,7 @@
           <img class="mx-4" src="img/Espace_entreprise_logo.svg" style="width: 8rem" />            
         </div>
         <div class="mx-4">
-            <a href="login.html">
+            <a href="login.php">
               <button type="button" class="btn btn-success">Se connecter</button>
             </a>
         </div>
