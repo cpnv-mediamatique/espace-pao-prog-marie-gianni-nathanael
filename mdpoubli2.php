@@ -7,7 +7,7 @@
     <title>Réinitialisation mot de passe</title>
 </head>
 <body>
-<form action="ok.php" method="get">
+<form action="ok.php?id=<?=$_GET['id']?>" method="get">
     <p>Votre id : <?=$_GET['id']?></p>
     <p>Le code reçu par mail :</p>
         <input type="text" name="code">
