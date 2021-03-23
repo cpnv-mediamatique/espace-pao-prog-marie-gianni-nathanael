@@ -11,6 +11,7 @@
 require("connexion.php");
 
 $code = $_GET['code'];
+$mdp = $_GET['mdp'];
 
 $requete = $bdd->prepare('  SELECT * 
                             FROM utilisateurs
@@ -22,6 +23,10 @@ $requete->execute(array(
 ));
 
 if($requete['hash'] == $code){
+    $bdd->prepare('     UPDATE utilisateurs
+                        SET mdp = 
+                        WHERE id =')
+
     echo '<p>Votre mot de passe a été changé</p>';
 }
 else{
