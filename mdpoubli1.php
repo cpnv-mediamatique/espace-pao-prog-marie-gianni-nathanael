@@ -8,8 +8,8 @@
 </head>
 <body>
     <p>Votre mail :</p>
-    <form action="mdpoubli.php">
-        <input type="email">
+    <form action="mdpoubli.php" method="get">
+        <input type="email" name="mail">
         <input type="submit">
     </form>
 </body>
