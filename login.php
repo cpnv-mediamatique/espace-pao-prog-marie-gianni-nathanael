@@ -69,7 +69,7 @@
                             <div class="row justify-content-center align-items-center m-3">
                                 <div class="col">
                                     <div class="mb-3">
-                                        <a href="#" id="couleurMDP">Mot de passe oublié?</a>
+                                        <a href="mdpoubli1.php" id="couleurMDP">Mot de passe oublié?</a>
                                     </div>
                                 </div>
                                 <!-- Submit button -->
