@@ -2,7 +2,7 @@
 
 
 
-        include 'loginbdd.php';
+        include 'connexion.php';
     
 
         // Vérification de la validité des informations
