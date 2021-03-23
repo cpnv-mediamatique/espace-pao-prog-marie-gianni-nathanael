@@ -1,10 +1,11 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    
-    <?php
-        include 'failmail.php';
-    ?>
+
+<?php
+                                             include 'failmail.php';
+                                         ?>
+  
 
 <head>
     <meta charset="UTF-8" />
@@ -64,8 +65,10 @@
                                     <div class="form-outline mb-4">
                                         <input type="email" id="form2Example1" class="form-control" name="mail" />
                                         <label class="form-label" for="form2Example1">Adresse E-mail</label>
+                                        
                                     </div>
                                 </div>
+                               
                             </div>
 
 
