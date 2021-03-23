@@ -1,6 +1,9 @@
 
 <!DOCTYPE html>
 <html lang="en">
+    <?php
+        include 'failmail.php';
+    ?>
 
 <head>
     <meta charset="UTF-8" />
