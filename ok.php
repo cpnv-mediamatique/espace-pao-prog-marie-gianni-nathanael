@@ -20,7 +20,7 @@ $hash = $_GET['hash'];
                         ');
     $bdd->query('       UPDATE utilisateurs
                         SET hash = ""
-                        WHERE id=1
+                        WHERE id='.$id.'
                         ');
 
     echo '<p>Votre mot de passe a été changé</p>';
