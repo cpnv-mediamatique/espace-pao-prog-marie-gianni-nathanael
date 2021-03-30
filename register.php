@@ -3,8 +3,8 @@
 <html lang="en">
 
 <?php
-                                             include 'failmail.php';
-                                         ?>
+    include 'failmail.php';
+?>
   
 
 <head>
@@ -47,8 +47,24 @@
                                 </div>
                                 <div class="col-11">
                                     <div class="form-outline">
-                                        <input type="text" id="form2Example1" class="form-control" name="nomprenom" />
-                                        <label class="form-label" for="form2Example1">Nom & Prénom</label>
+                                        <input type="text" id="form2Example1" class="form-control" name="nom" />
+                                        <label class="form-label" for="form2Example1">Nom</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mb-0 m-3 mt-4">
+                                <div class="col-1 mt-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-person-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                    </svg>
+                                </div>
+                                <div class="col-11">
+                                    <div class="form-outline">
+                                        <input type="text" id="form2Example1" class="form-control" name="prenom" />
+                                        <label class="form-label" for="form2Example1">Prénom</label>
                                     </div>
                                 </div>
                             </div>
