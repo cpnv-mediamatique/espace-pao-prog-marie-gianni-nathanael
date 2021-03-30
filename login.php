@@ -26,7 +26,7 @@
         <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
 
             <div class="text-center">
-                <img class="mb-5" src="img/Espace_entreprise_logo.svg" style="width: 12rem" />
+                <img class="mb-5" src="img/Espace_entreprise_logo.svg" style="width: 12rem"/>
                 <div class="card-body shadow-3-strong bordDeCarte" style="width: 30rem ">
                     <form action="indexconnect.php">
                         <div class="formulaire">

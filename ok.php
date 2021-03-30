@@ -22,8 +22,10 @@ $hash = $_GET['hash'];
                         SET hash = ""
                         WHERE id='.$id.'
                         ');
-
+                        
     echo '<p>Votre mot de passe a été changé</p>';
+    header('Location: index.php');
+    
 ?>
 
 
