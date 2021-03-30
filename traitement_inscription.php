@@ -1,5 +1,30 @@
 <?php 
 
+
+
+        include 'connexion.php';
+    
+
+        // Vérification de la validité des informations
+
+        // Hachage du mot de passe
+        $pass_hache = password_hash($_POST['mdp'], PASSWORD_DEFAULT);
+
+        // Insertion
+        $req = $bdd->prepare('INSERT INTO utilisateurs(nomprenom, mdp, mail) VALUES(:nomprenom, :mdp, :mail)');
+        $req->execute(array(
+            
+            'nomprenom' => $_POST["nomprenom"],
+            'mdp' => $pass_hache,
+            'mail' => $_POST["mail"]));
+
+        //header("Location: index.php");
+        
+        //$req->debugDumpParams();
+
+
+/*
+
 session_start();
 
 include 'loginbdd.php';
@@ -55,4 +80,4 @@ $req->execute(array(
     }
 
 
-?>
+*/?>

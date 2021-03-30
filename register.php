@@ -2,6 +2,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<?php
+                                             include 'failmail.php';
+                                         ?>
+  
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -42,7 +47,7 @@
                                 </div>
                                 <div class="col-11">
                                     <div class="form-outline">
-                                        <input type="email" id="form2Example1" class="form-control" />
+                                        <input type="text" id="form2Example1" class="form-control" name="nomprenom" />
                                         <label class="form-label" for="form2Example1">Nom & Prénom</label>
                                     </div>
                                 </div>
@@ -58,10 +63,12 @@
                                 </div>
                                 <div class="col-11">
                                     <div class="form-outline mb-4">
-                                        <input type="email" id="form2Example1" class="form-control" />
+                                        <input type="email" id="form2Example1" class="form-control" name="mail" />
                                         <label class="form-label" for="form2Example1">Adresse E-mail</label>
+                                        
                                     </div>
                                 </div>
+                               
                             </div>
 
 
@@ -75,7 +82,7 @@
                                 </div>
                                 <div class="col-11">
                                     <div class="form-outline mb-3">
-                                        <input type="password" id="form2Example2" class="form-control" />
+                                        <input type="password" id="form2Example2" class="form-control" name="mdp" />
                                         <label class="form-label" for="form2Example2">Mot de passe</label>
                                     </div>
                                 </div>
@@ -91,8 +98,7 @@
 
                                 <div class="col">
                                     <a href="login.php">
-                                    <button type="submit" class="btn btn-success btn-block mb-3 btn-rounded">Se
-                                        connecter</button>
+                                    <button type="submit" class="btn btn-success btn-block mb-3 btn-rounded">S'inscrire</button>
                                     </a>
                                 </div>
                                 
