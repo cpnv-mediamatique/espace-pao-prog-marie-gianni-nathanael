@@ -9,29 +9,21 @@
 <body>
 <?php
 require("connexion.php");
-
-$code = $_GET['code'];
+$id = $_GET['id'];
 $mdp = $_GET['mdp'];
+$hash = $_GET['hash'];
 
-$requete = $bdd->prepare('  SELECT * 
-                            FROM utilisateurs
-                            WHERE mail=:mail');
-
-$requete->execute(array(
-'mail'=>$_GET['mail'],
-'hash'=>$_GET['hash']
-));
-
-if($requete['hash'] == $code){
-    $bdd->prepare('     UPDATE utilisateurs
-                        SET mdp = 
-                        WHERE id =')
+    $bdd->query('       UPDATE utilisateurs
+                        SET mdp = "'.$mdp.'"
+                        WHERE id ='.$id.'
+                        AND hash = '.$hash.'
+                        ');
+    $bdd->query('       UPDATE utilisateurs
+                        SET hash = ""
+                        WHERE id=1
+                        ');
 
     echo '<p>Votre mot de passe a été changé</p>';
-}
-else{
-    echo 'bug';
-}
 ?>
 
 

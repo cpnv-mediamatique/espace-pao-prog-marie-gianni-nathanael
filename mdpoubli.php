@@ -31,7 +31,7 @@ $mail=$requete->fetch();
 $id=$mail['id'];
 $hash=$mail['hash'];
 
-mail($_GET['mail'], 'Votre mot de passe','veuillez cliquer sur le lien suivant : localhost/espace-pao/espace-pao-prog-marie-gianni-nathanael/mdpoubli2.php?id='.$id.'et entrez le mot de passe suivant : '.$hash.'', 'From : L\'espace entreprise');
+mail($_GET['mail'], 'Votre mot de passe','veuillez cliquer sur le lien suivant : localhost/espace-pao/espace-pao-prog-marie-gianni-nathanael/mdpoubli2.php?id='.$id.'&hash='.$hash.'', 'From : L\'espace entreprise');
 
 header('Location: index.php');
 
