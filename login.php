@@ -31,6 +31,11 @@
                     <form action="indexconnect.php">
                         <div class="formulaire">
                             <!-- Email input -->
+
+                        <script>
+                            
+                        </script>
+
                             <div class="row mb-0 m-3 mt-4">
                                 <div class="col-1 mt-1">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"

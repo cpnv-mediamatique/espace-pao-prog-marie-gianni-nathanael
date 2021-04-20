@@ -16,10 +16,20 @@
     <link rel="stylesheet" href="css/mdb.min.css" />
     <!-- Notre CSS -->
     <link rel="stylesheet" href="css/style.css" />
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    
+    if($("#rang").data("rang")=="Eleve")
+    {
+        $("#testt").attr("style","display:none");   
+    }
+
+    console.log($("#rang").data("rang"));
+    
+    </script>
 </head>
-
 <body>
-
+<div id="rang" data-rang="Eleve"></div>
     <!-- La NavBar -->
     <div class="container-max-widths">
         <nav class="navbar navbar-dark primary-color retourSansDeco py-0">
@@ -38,6 +48,14 @@
             </div>
         </nav>
     </div>
+    
+    <?php
+    require("connexion.php");
+    $requete = $bdd->query('    SELECT  rang
+                                FROM    utilisateurs
+                                WHERE   id="1"');
+    ?>
+
     <!-- Impressions -->
     <div class="backgroundColorFonce">
         <div class="container">
@@ -84,7 +102,7 @@
                     </div>
                 </div>
                 <!-- Carte de visites -->
-                <div class="col-lg-3 mt-5 order-3 order-lg-3">
+                <div id="testt" class="col-lg-3 mt-5 order-3 order-lg-3">
                     <div class="card">
                         <div class="fondVert shadow-1-strong">
                             <div class="card-top mt-5 mb-5">
