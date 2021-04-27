@@ -212,7 +212,7 @@
                                     </p>
                                     <a href="#!" class="btn btn-success">Commander</a>
                             </div>
-                        </div>
+                        </div><!-- test -->
                     </div>
                 </div>
             </div>
