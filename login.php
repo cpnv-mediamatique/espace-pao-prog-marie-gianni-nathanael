@@ -79,7 +79,7 @@
                                 </div>
                                 <!-- Submit button -->
                                 <div class="col">
-                                    <a href="">
+                                    <a href="traitement_connexion">
                                     <button type="submit" class="btn btn-success btn-block mb-3 btn-rounded" value="submit">Se
                                         connecter</button>
                                     </a>
