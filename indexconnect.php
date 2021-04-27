@@ -71,7 +71,7 @@
                                     <p class="card-text">
                                         Nous nous chargeons de vos impressions avec choix du grammage.
                                     </p>
-                                    <a href="#!" class="btng btn-success btn-enseignant">Commander</a>
+                                    <a href="#!" class="btng btn-success btn-enseignant btn-eleve">Commander</a>
                             </div>
                         </div>
                     </div>
@@ -114,7 +114,7 @@
                                     <p class="card-text">
                                         Des cartes de visite sur mesure, avec des designs et une impression de qualité.
                                     </p>
-                                    <a href="cartesVisite.php" class="btng btn-success">Commander</a>
+                                    <a href="cartesVisite.php" class="btng btn-success btn-enseignant">Commander</a>
                             </div>
                         </div>
                     </div>
@@ -145,7 +145,7 @@
                                         téléphones ou d’autres
                                         usages.
                                     </p>
-                                    <a href="etiquettes.php" class="btng btn-success">Commander</a>
+                                    <a href="etiquettes.php" class="btng btn-success btn-eleve">Commander</a>
                             </div>
                         </div>
                     </div>
@@ -175,7 +175,7 @@
                                         Je comprends pas s'ils font que les plannings de nettoyage ou pleins d'autres
                                         tableaux.
                                     </p>
-                                    <a href="#!" class="btng btn-success">Commander</a>
+                                    <a href="#!" class="btng btn-success btn-eleve">Commander</a>
                             </div>
                         </div>
                     </div>
@@ -201,7 +201,7 @@
                                     <p class="card-text">
                                         Pour que les élèves gardent une concentration maximale pendant les cours.
                                     </p>
-                                    <a href="#!" class="btng btn-success">Commander</a>
+                                    <a href="#!" class="btng btn-success btn-enseignant">Commander</a>
                             </div>
                         </div><!-- test -->
                     </div>
@@ -231,6 +231,10 @@ $(document).ready(function(){
     if($("#rang").data("rang")=="Enseignant")
     {
         $(".btn-enseignant").attr("style","pointer-events: initial; background-color:#00b74a;");   
+    }
+    else if($("#rang").data("rang")=="Eleve")
+    {
+        $(".btn-eleve").attr("style","pointer-events: initial; background-color:#00b74a;");
     }
     console.log($("#rang").data("rang"));
 })
