@@ -36,7 +36,7 @@
 
     <hr size="4px">
     <div class="row ">
-      <div class="col">Pour finaliser votre inscription, nous vous avons envoyer un mail pour vérifier votre adresse.</div>
+      <div class="col">Pour finaliser votre inscription, nous vous avons envoyé un mail pour vérifier votre adresse.</div>
     </div>
     <hr size="4px">
 

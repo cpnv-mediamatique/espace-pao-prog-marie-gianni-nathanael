@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>Material Design for Bootstrap</title>
+    <!-- Jquery -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- MDB icon -->
     <link rel="icon" href="img/favicon.png" type="image/x-icon" />
     <!-- Font Awesome -->
@@ -16,20 +18,9 @@
     <link rel="stylesheet" href="css/mdb.min.css" />
     <!-- Notre CSS -->
     <link rel="stylesheet" href="css/style.css" />
-    <!-- Jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
-    
-    if($("#rang").data("rang")=="Eleve")
-    {
-        $("#testt").attr("style","display:none");   
-    }
-
-    console.log($("#rang").data("rang"));
-    
-    </script>
 </head>
 <body>
-<div id="rang" data-rang="Eleve"></div>
+<div id="rang" data-rang="Enseignant"></div> <!-- les "autorisations" fonctionnent avec le data-rang, un script vient chercher ce qu'il y a dans data-rang pour rendre possible le clic sur les boutons "commander" -->
     <!-- La NavBar -->
     <div class="container-max-widths">
         <nav class="navbar navbar-dark primary-color retourSansDeco py-0">
@@ -42,7 +33,7 @@
                     <a href="statut.php">Statuts</a>
                     <a class="mx-4" href="commandes.php">Commandes</a>
                     <a href="index.php">
-                        <button type="button" class="btn btn-success">Se déconnecter</button>
+                        <button type="button" class="btn btn-success" style="pointer-events: initial; background-color:#00b74a;">Se déconnecter</button>
                     </a>
                 </div>
             </div>
@@ -80,7 +71,7 @@
                                     <p class="card-text">
                                         Nous nous chargeons de vos impressions avec choix du grammage.
                                     </p>
-                                    <a href="#!" class="btn btn-success">Commander</a>
+                                    <a href="#!" class="btng btn-success btn-enseignant">Commander</a>
                             </div>
                         </div>
                     </div>
@@ -104,7 +95,7 @@
                 <!-- Carte de visites -->
                 <div id="testt" class="col-lg-3 mt-5 order-3 order-lg-3">
                     <div class="card">
-                        <div class="fondVert shadow-1-strong">
+                        <div class="fondVert shadow-1-strong prof">
                             <div class="card-top mt-5 mb-5">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor"
                                     class="bi bi-card-text fondVert" viewBox="0 0 16 16">
@@ -123,7 +114,7 @@
                                     <p class="card-text">
                                         Des cartes de visite sur mesure, avec des designs et une impression de qualité.
                                     </p>
-                                    <a href="cartesVisite.php" class="btn btn-success">Commander</a>
+                                    <a href="cartesVisite.php" class="btng btn-success">Commander</a>
                             </div>
                         </div>
                     </div>
@@ -154,7 +145,7 @@
                                         téléphones ou d’autres
                                         usages.
                                     </p>
-                                    <a href="etiquettes.php" class="btn btn-success">Commander</a>
+                                    <a href="etiquettes.php" class="btng btn-success">Commander</a>
                             </div>
                         </div>
                     </div>
@@ -184,7 +175,7 @@
                                         Je comprends pas s'ils font que les plannings de nettoyage ou pleins d'autres
                                         tableaux.
                                     </p>
-                                    <a href="#!" class="btn btn-success">Commander</a>
+                                    <a href="#!" class="btng btn-success">Commander</a>
                             </div>
                         </div>
                     </div>
@@ -210,7 +201,7 @@
                                     <p class="card-text">
                                         Pour que les élèves gardent une concentration maximale pendant les cours.
                                     </p>
-                                    <a href="#!" class="btn btn-success">Commander</a>
+                                    <a href="#!" class="btng btn-success">Commander</a>
                             </div>
                         </div><!-- test -->
                     </div>
@@ -230,10 +221,19 @@
     src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
-
 <!-- MDB -->
 <script type="text/javascript" src="js/mdb.min.js"></script>
 <!-- Custom scripts -->
 <script type="text/javascript"></script>
+
+<script>
+$(document).ready(function(){
+    if($("#rang").data("rang")=="Enseignant")
+    {
+        $(".btn-enseignant").attr("style","pointer-events: initial; background-color:#00b74a;");   
+    }
+    console.log($("#rang").data("rang"));
+})
+    </script>
 
 </html>
