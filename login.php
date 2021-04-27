@@ -28,7 +28,7 @@
             <div class="text-center">
                 <img class="mb-5" src="img/Espace_entreprise_logo.svg" style="width: 12rem"/>
                 <div class="card-body shadow-3-strong bordDeCarte" style="width: 30rem ">
-                    <form action="indexconnect.php">
+                    <form action="traitement_connexion.php" method="post">
                         <div class="formulaire">
                             <!-- Email input -->
 
@@ -46,8 +46,8 @@
                                 </div>
                                 <div class="col-11">
                                     <div class="form-outline mb-4">
-                                        <input type="email" id="form2Example1" class="form-control" />
-                                        <label class="form-label" for="form2Example1">Adresse E-mail</label>
+                                        <input type="mail" id="mail" class="form-control" />
+                                        <label class="form-label" for="mail">Adresse E-mail</label>
                                     </div>
                                 </div>
                             </div>
@@ -64,8 +64,8 @@
                                 </div>
                                 <div class="col-11">
                                     <div class="form-outline mb-3">
-                                        <input type="password" id="form2Example2" class="form-control" />
-                                        <label class="form-label" for="form2Example2">Mot de passe</label>
+                                        <input type="password" id="pass" class="form-control" />
+                                        <label class="form-label" for="password">Mot de passe</label>
                                     </div>
                                 </div>
                             </div>
@@ -79,10 +79,8 @@
                                 </div>
                                 <!-- Submit button -->
                                 <div class="col">
-                                    <a href="traitement_connexion">
                                     <button type="submit" class="btn btn-success btn-block mb-3 btn-rounded" value="submit">Se
                                         connecter</button>
-                                    </a>
                                 </div>
                             </div>
 
