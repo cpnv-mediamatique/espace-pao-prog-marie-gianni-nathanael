@@ -79,8 +79,10 @@
                                 </div>
                                 <!-- Submit button -->
                                 <div class="col">
+                                    <a href="">
                                     <button type="submit" class="btn btn-success btn-block mb-3 btn-rounded" value="submit">Se
                                         connecter</button>
+                                    </a>
                                 </div>
                             </div>
 
@@ -90,6 +92,12 @@
                                     <span class="message">Pas encore membre ? <a id="creerUnCompteVert" href="register.php">Créer un compte</a></span>
                                 </div>
                             </div>
+
+
+
+
+
+
 
 
                         </div>
