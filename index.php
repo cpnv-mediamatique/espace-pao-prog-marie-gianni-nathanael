@@ -29,7 +29,7 @@
         </div>
         <div class="mx-4">
             <a href="login.php">
-              <button type="button" class="btn btn-success">Se connecter</button>
+              <button type="button" class="btn btn-success" style="pointer-events: initial; background-color:#00b74a;">Se connecter</button>
             </a>
         </div>
     </nav>
@@ -58,7 +58,7 @@
                   <p class="card-text">
                     Nous nous chargeons de vos impressions avec choix du grammage.
                   </p>
-                  <a href="#!" class="btn btn-success">Commander</a>
+                  <a href="#!" class="btng btn-success">Commander</a>
               </div>
             </div>
           </div>
@@ -100,7 +100,7 @@
                   <p class="card-text">
                     Des cartes de visite sur mesure, avec des designs et une impression de qualité.
                   </p>
-                  <a href="cartesVisite.php" class="btn btn-success">Commander</a>
+                  <a href="cartesVisite.php" class="btng btn-success">Commander</a>
               </div>
             </div>
           </div>
@@ -129,7 +129,7 @@
                     Étiquettes collantes pouvant servir pour les armoires de classe, les casiers téléphones ou d’autres
                     usages.
                   </p>
-                  <a href="etiquettes.php" class="btn btn-success">Commander</a>
+                  <a href="etiquettes.php" class="btng btn-success">Commander</a>
               </div>
             </div>
           </div>
@@ -157,7 +157,7 @@
                   <p class="card-text">
                     Je comprends pas s'ils font que les plannings de nettoyage ou pleins d'autres tableaux.
                   </p>
-                  <a href="#!" class="btn btn-success">Commander</a>
+                  <a href="#!" class="btng btn-success">Commander</a>
               </div>
             </div>
           </div>
@@ -183,7 +183,7 @@
                   <p class="card-text">
                     Pour que les élèves gardent une concentration maximale pendant les cours.
                   </p>
-                  <a href="#!" class="btn btn-success">Commander</a>
+                  <a href="#!" class="btng btn-success">Commander</a>
               </div>
             </div>
           </div>
