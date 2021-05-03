@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -27,33 +28,31 @@
             <div class="text-center">
                 <img class="mb-5" src="img/Espace_entreprise_logo.svg" style="width: 12rem"/>
                 <div class="card-body shadow-3-strong bordDeCarte" style="width: 30rem ">
-                    <form action="mdpoubli.php" method="get">
-                        <div class="mdpoubli.php">
-                            <!-- Email input -->
-                            <div class="row mb-0 m-3 mt-4">
+                    <form action="ok.php" method="get">
+                        <div class="formulaire">
+                            <!-- Password input -->
+                            <div class="row m-3 mt-0 ">
                                 <div class="col-1 mt-1">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                                        class="bi bi-person-fill" viewBox="0 0 16 16">
+                                    <svg xmlns="http://www.w3.org/2000/svg" transform='rotate(-90)' width="20"
+                                        height="20" fill="currentColor" class="bi bi-key-fill" viewBox="0 0 16 16">
                                         <path
-                                            d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                            d="M3.5 11.5a3.5 3.5 0 1 1 3.163-5H14L15.5 8 14 9.5l-1-1-1 1-1-1-1 1-1-1-1 1H6.663a3.5 3.5 0 0 1-3.163 2zM2.5 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
                                     </svg>
                                 </div>
+                                <input name="id" value="<?=$_GET['id']?>"style='display:none'>
+                                <input name="hash" value="<?=$_GET['hash']?>"style='display:none'>
                                 <div class="col-11">
-                                    <div class="form-outline mb-4">
-                                        <input type="email" id="form2Example1" class="form-control" name="mail"/>
-                                        <label class="form-label" for="form2Example1">Votre adresse E-mail</label>
+                                    <div class="form-outline mb-3">
+                                        <input type="password" id="form2Example2" class="form-control" name="mdp"/>
+                                        <label class="form-label" for="form2Example2">Votre nouveau mot de passe</label>
                                     </div>
                                 </div>
                             </div>
-
                                 <!-- Submit button -->
                                 <div class="col">
-                                <input type="submit" value="changer de mot de passe" class="btn btn-success btn-block mb-3 btn-rounded">
+                                <input type="submit" value="Mettre à jour le mot de passe" class="btn btn-success btn-block mb-3 btn-rounded">
                                 </div>
                             </div>
-
-
-
                         </div>
 
                         
@@ -90,3 +89,10 @@
 
 
 </html>
+
+<form action="ok.php" method="get">
+    <p>Votre nouveau mot de passe :</p>
+    <input type="password" name="mdp"><br><br>
+    
+    <input type="submit" value="envoyer">
+</form>

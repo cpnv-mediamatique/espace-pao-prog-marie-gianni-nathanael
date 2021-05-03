@@ -26,11 +26,16 @@
         <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
 
             <div class="text-center">
-                <img class="mb-5" src="img/Espace_entreprise_logo.svg" style="width: 12rem" />
+                <img class="mb-5" src="img/Espace_entreprise_logo.svg" style="width: 12rem"/>
                 <div class="card-body shadow-3-strong bordDeCarte" style="width: 30rem ">
-                    <form action="indexconnect.php">
+                    <form action="traitement_connexion.php" method="post">
                         <div class="formulaire">
                             <!-- Email input -->
+
+                        <script>
+                            
+                        </script>
+
                             <div class="row mb-0 m-3 mt-4">
                                 <div class="col-1 mt-1">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
@@ -41,8 +46,8 @@
                                 </div>
                                 <div class="col-11">
                                     <div class="form-outline mb-4">
-                                        <input type="email" id="form2Example1" class="form-control" />
-                                        <label class="form-label" for="form2Example1">Adresse E-mail</label>
+                                        <input type="mail" id="mail" class="form-control" />
+                                        <label class="form-label" for="mail">Adresse E-mail</label>
                                     </div>
                                 </div>
                             </div>
@@ -59,8 +64,8 @@
                                 </div>
                                 <div class="col-11">
                                     <div class="form-outline mb-3">
-                                        <input type="password" id="form2Example2" class="form-control" />
-                                        <label class="form-label" for="form2Example2">Mot de passe</label>
+                                        <input type="password" id="pass" class="form-control" />
+                                        <label class="form-label" for="password">Mot de passe</label>
                                     </div>
                                 </div>
                             </div>
@@ -69,7 +74,7 @@
                             <div class="row justify-content-center align-items-center m-3">
                                 <div class="col">
                                     <div class="mb-3">
-                                        <a href="#" id="couleurMDP">Mot de passe oublié?</a>
+                                        <a href="mdpoubli1.php" id="couleurMDP">Mot de passe oublié?</a>
                                     </div>
                                 </div>
                                 <!-- Submit button -->
@@ -85,6 +90,12 @@
                                     <span class="message">Pas encore membre ? <a id="creerUnCompteVert" href="register.php">Créer un compte</a></span>
                                 </div>
                             </div>
+
+
+
+
+
+
 
 
                         </div>
@@ -111,8 +122,7 @@
 <!-- Bootstrap tooltips -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
 <!-- Bootstrap core JavaScript -->
-<script type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
 
